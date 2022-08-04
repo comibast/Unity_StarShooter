@@ -232,7 +232,7 @@ GameObject:
   - component: {fileID: 703390173}
   - component: {fileID: 703390172}
   m_Layer: 5
-  m_Name: Button_exit
+  m_Name: "Button_\u56DE\u9996\u9801"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -320,7 +320,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 703390174}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1518594443}
+        m_TargetAssemblyTypeName: ControlButton, Assembly-CSharp
+        m_MethodName: NextGame
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Menu
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &703390174
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -975,7 +987,7 @@ GameObject:
   - component: {fileID: 1476991655}
   - component: {fileID: 1476991654}
   m_Layer: 5
-  m_Name: Button_start
+  m_Name: "Button_\u91CD\u65B0\u904A\u6232"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1114,6 +1126,7 @@ GameObject:
   - component: {fileID: 1518594441}
   - component: {fileID: 1518594440}
   - component: {fileID: 1518594439}
+  - component: {fileID: 1518594443}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1206,3 +1219,15 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1518594443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1518594438}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7b9e82492e980942891dfe48089d5ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

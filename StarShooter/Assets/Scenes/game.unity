@@ -314,10 +314,10 @@ RectTransform:
   m_Father: {fileID: 1369082493}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -396, y: 890}
-  m_SizeDelta: {x: 238.8283, y: 83.2091}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 144, y: -70}
+  m_SizeDelta: {x: 238.82831, y: 83.20911}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &552257154
 MonoBehaviour:
@@ -688,10 +688,10 @@ RectTransform:
   m_Father: {fileID: 1369082493}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -20.5389, y: 808.4758}
-  m_SizeDelta: {x: 398.9223, y: 79.8383}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: -20.5389, y: -151.52417}
+  m_SizeDelta: {x: 398.9223, y: 79.83826}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &700837409
 MonoBehaviour:
@@ -798,7 +798,7 @@ GameObject:
   - component: {fileID: 865656237}
   - component: {fileID: 865656236}
   m_Layer: 5
-  m_Name: Button_stop (1)
+  m_Name: "Button_\u6062\u5FA9\u904A\u6232"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1032,7 +1032,7 @@ GameObject:
   - component: {fileID: 1021285780}
   - component: {fileID: 1021285779}
   m_Layer: 5
-  m_Name: UI_pause
+  m_Name: PauseUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1112,7 +1112,7 @@ GameObject:
   - component: {fileID: 1131272873}
   - component: {fileID: 1131272872}
   m_Layer: 5
-  m_Name: Button_stop (2)
+  m_Name: "Button_\u56DE\u9996\u9801"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1200,7 +1200,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1131272874}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1369082494}
+        m_TargetAssemblyTypeName: ControlButton, Assembly-CSharp
+        m_MethodName: NextGame
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Menu
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1131272874
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1344,6 +1356,7 @@ GameObject:
   - component: {fileID: 1369082492}
   - component: {fileID: 1369082491}
   - component: {fileID: 1369082490}
+  - component: {fileID: 1369082494}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1380,10 +1393,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1080, y: 1920}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -1435,6 +1448,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1369082494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1369082489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7b9e82492e980942891dfe48089d5ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1415865935
 GameObject:
   m_ObjectHideFlags: 0
