@@ -31,6 +31,11 @@ public class menu : MonoBehaviour
     [Header("解析度Dropdown")]
     public Dropdown SizeDropdown;
 
+    [Header("語言Dropdown")]
+    public Dropdown LanDropdown;
+    //暫存語言Dropdown的ID值
+    string SaveLanID = "SaveLanID";
+
     private void Awake()
     {
         filePaths = Directory.GetFiles(Application.streamingAssetsPath, "*.png");
@@ -140,4 +145,11 @@ public class menu : MonoBehaviour
                 break;
             }
     }
+
+    public void ChangeLan(){
+        //Debug.Log(LanDropdown.value);
+      PlayerPrefs.SetInt(SaveLanID, LanDropdown.value);
+    }
+
+
 }

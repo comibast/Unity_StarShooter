@@ -132,7 +132,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100000, guid: d9808401c68af274a8edfbed3d1b53c7, type: 3}
       propertyPath: m_Name
-      value: vehicle_playerShip
+      value: PlayerShip
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d9808401c68af274a8edfbed3d1b53c7, type: 3}
       propertyPath: m_RootOrder
@@ -144,7 +144,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d9808401c68af274a8edfbed3d1b53c7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.87
+      value: -2.6
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d9808401c68af274a8edfbed3d1b53c7, type: 3}
       propertyPath: m_LocalPosition.z
@@ -667,6 +667,7 @@ GameObject:
   - component: {fileID: 700837411}
   - component: {fileID: 700837410}
   - component: {fileID: 700837409}
+  - component: {fileID: 700837412}
   m_Layer: 5
   m_Name: text:SCORE
   m_TagString: Untagged
@@ -741,7 +742,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'SCORE:'
+  m_Text: "\u5206\u6578\uFF1A"
 --- !u!222 &700837411
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -750,6 +751,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 700837407}
   m_CullTransparentMesh: 1
+--- !u!114 &700837412
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 700837407}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 359fafe911287a543ab6644ee740e98b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ID: 25
 --- !u!1 &862854770 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: d9808401c68af274a8edfbed3d1b53c7, type: 3}
@@ -784,6 +798,23 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &862854773
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 862854770}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 907273c3df023a64495cf7c477629805, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Speed: 7
+  MinX: -2.35
+  MaxX: 2.35
+  MinY: -3.2
+  MaxY: 4.6
 --- !u!1 &865656234
 GameObject:
   m_ObjectHideFlags: 0
@@ -1472,6 +1503,7 @@ GameObject:
   - component: {fileID: 1415865938}
   - component: {fileID: 1415865937}
   - component: {fileID: 1415865939}
+  - component: {fileID: 1415865940}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -1531,7 +1563,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: STOP
+  m_Text: "\u66AB\u505C\u904A\u6232"
 --- !u!222 &1415865938
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1555,6 +1587,19 @@ MonoBehaviour:
   m_EffectColor: {r: 0.16456035, g: 0.3330872, b: 0.8113208, a: 0.5}
   m_EffectDistance: {x: 2, y: -2}
   m_UseGraphicAlpha: 1
+--- !u!114 &1415865940
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1415865935}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 359fafe911287a543ab6644ee740e98b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ID: 24
 --- !u!1 &1808482685
 GameObject:
   m_ObjectHideFlags: 0
