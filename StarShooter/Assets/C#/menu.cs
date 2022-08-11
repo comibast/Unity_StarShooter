@@ -36,6 +36,8 @@ public class menu : MonoBehaviour
     //暫存語言Dropdown的ID值
     string SaveLanID = "SaveLanID";
 
+    public InputField[] Keyboards;
+
     private void Awake()
     {
         filePaths = Directory.GetFiles(Application.streamingAssetsPath, "*.png");
@@ -46,6 +48,17 @@ public class menu : MonoBehaviour
 #if UNITY_ANDROID || UNITY_IOS
         SizeDropdown.interactable = false;
 #endif
+        //預設方向鍵wasd(要小寫)
+        if(Staticvar.KeyboardsState[0] == null || Staticvar.KeyboardsState[1] == null || Staticvar.KeyboardsState[2] == null || Staticvar.KeyboardsState[3] == null)
+        {
+            Keyboards[0].text = "w";
+            Keyboards[1].text = "s";
+            Keyboards[2].text = "a";
+            Keyboards[3].text = "d";
+            for (int i = 0; i < Keyboards.Length; i++)
+            Staticvar.KeyboardsState[i] = Keyboards[i].text;
+        }
+        
 
     }
 
@@ -150,6 +163,8 @@ public class menu : MonoBehaviour
         //Debug.Log(LanDropdown.value);
       PlayerPrefs.SetInt(SaveLanID, LanDropdown.value);
     }
-
-
+    //
+    public void SetKeyboard(int ID){
+        Staticvar.KeyboardsState[ID] = Keyboards[ID].text;
+    }
 }

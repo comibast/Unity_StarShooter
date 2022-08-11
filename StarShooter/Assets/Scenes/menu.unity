@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 14973440}
   - component: {fileID: 14973439}
   m_Layer: 5
-  m_Name: InputField (1)
+  m_Name: "InputField\u4E0B"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -219,7 +219,19 @@ MonoBehaviour:
       m_Calls: []
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1518594443}
+        m_TargetAssemblyTypeName: menu, Assembly-CSharp
+        m_MethodName: SetKeyboard
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_CaretColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
   m_CustomCaretColor: 0
   m_SelectionColor: {r: 0.65882355, g: 0.80784315, b: 1, a: 0.7529412}
@@ -2764,7 +2776,7 @@ GameObject:
   - component: {fileID: 1155540509}
   - component: {fileID: 1155540508}
   m_Layer: 5
-  m_Name: InputField (3)
+  m_Name: "InputField\u53F3"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2847,7 +2859,19 @@ MonoBehaviour:
       m_Calls: []
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1518594443}
+        m_TargetAssemblyTypeName: menu, Assembly-CSharp
+        m_MethodName: SetKeyboard
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_CaretColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
   m_CustomCaretColor: 0
   m_SelectionColor: {r: 0.65882355, g: 0.80784315, b: 1, a: 0.7529412}
@@ -3721,7 +3745,7 @@ GameObject:
   - component: {fileID: 1362483688}
   - component: {fileID: 1362483687}
   m_Layer: 5
-  m_Name: Text
+  m_Name: "\u5F80\u53F3Text"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4282,7 +4306,7 @@ GameObject:
   - component: {fileID: 1447561086}
   - component: {fileID: 1447561085}
   m_Layer: 5
-  m_Name: Text
+  m_Name: "\u5F80\u4E0AText"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4361,7 +4385,7 @@ GameObject:
   - component: {fileID: 1473598979}
   - component: {fileID: 1473598978}
   m_Layer: 5
-  m_Name: Text
+  m_Name: "\u5F80\u4E0BText"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4706,6 +4730,11 @@ MonoBehaviour:
   AudioMixerObj: {fileID: 24100000, guid: b3f4513d966bf964a8240cdb174b6e14, type: 2}
   SizeDropdown: {fileID: 1780097843}
   LanDropdown: {fileID: 1304036981}
+  Keyboards:
+  - {fileID: 1775038161}
+  - {fileID: 14973439}
+  - {fileID: 1805739495}
+  - {fileID: 1155540508}
 --- !u!1 &1584436273
 GameObject:
   m_ObjectHideFlags: 0
@@ -4718,7 +4747,7 @@ GameObject:
   - component: {fileID: 1584436276}
   - component: {fileID: 1584436275}
   m_Layer: 5
-  m_Name: Text
+  m_Name: "\u5F80\u5DE6Text"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5027,7 +5056,7 @@ GameObject:
   - component: {fileID: 1775038162}
   - component: {fileID: 1775038161}
   m_Layer: 5
-  m_Name: InputField
+  m_Name: "InputField\u4E0A"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5110,7 +5139,19 @@ MonoBehaviour:
       m_Calls: []
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1518594443}
+        m_TargetAssemblyTypeName: menu, Assembly-CSharp
+        m_MethodName: SetKeyboard
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_CaretColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
   m_CustomCaretColor: 0
   m_SelectionColor: {r: 0.65882355, g: 0.80784315, b: 1, a: 0.7529412}
@@ -5488,7 +5529,7 @@ GameObject:
   - component: {fileID: 1805739496}
   - component: {fileID: 1805739495}
   m_Layer: 5
-  m_Name: InputField (2)
+  m_Name: "InputField\u5DE6"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5571,7 +5612,19 @@ MonoBehaviour:
       m_Calls: []
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1518594443}
+        m_TargetAssemblyTypeName: menu, Assembly-CSharp
+        m_MethodName: SetKeyboard
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_CaretColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
   m_CustomCaretColor: 0
   m_SelectionColor: {r: 0.65882355, g: 0.80784315, b: 1, a: 0.7529412}
@@ -5688,7 +5741,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: English
+  m_Text: "\u7E41\u9AD4\u4E2D\u6587"
 --- !u!222 &1860307607
 CanvasRenderer:
   m_ObjectHideFlags: 0

@@ -23,11 +23,13 @@ public class LoadText : MonoBehaviour
                 //GetComponent<Text>().text
                 //this.GetComponent<Text>().text
                 //GameObject.Find("ReadText")找尋場景上有該名稱的物件
+                if(FindObjectOfType<ReadText>())
                 gameObject.GetComponent<Text>().text = FindObjectOfType<ReadText>().CHDatas[ID];
                 break;
             //英文
             case 1:
-                gameObject.GetComponent<Text>().text = FindObjectOfType<ReadText>().ENDatas[ID];
+                if (FindObjectOfType<ReadText>())
+                    gameObject.GetComponent<Text>().text = FindObjectOfType<ReadText>().ENDatas[ID];
                 break;
         }
     }
