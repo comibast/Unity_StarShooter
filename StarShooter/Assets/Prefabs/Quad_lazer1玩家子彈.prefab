@@ -15,8 +15,8 @@ GameObject:
   - component: {fileID: 7106559060955822966}
   - component: {fileID: 6812844288908100650}
   m_Layer: 0
-  m_Name: Quad_lazer1
-  m_TagString: Untagged
+  m_Name: "Quad_lazer1\u73A9\u5BB6\u5B50\u5F48"
+  m_TagString: BulletPlayer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -128,3 +128,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Speed: 10
   DeletTime: 10
+  SetStates: 0
+  PlayerExp: {fileID: 100008, guid: 3455fe69f7ddc4604b95bf9b0a1e88d7, type: 3}
+  EnemyExp: {fileID: 100012, guid: 160925a6fe2664f2a978566b819f0af0, type: 3}
+  HurtPlayerNum: 10
+  AddScore: 100

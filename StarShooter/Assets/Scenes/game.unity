@@ -132,7 +132,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100000, guid: d9808401c68af274a8edfbed3d1b53c7, type: 3}
       propertyPath: m_Name
-      value: PlayerShip
+      value: "PlayerShip\u73A9\u5BB6"
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: d9808401c68af274a8edfbed3d1b53c7, type: 3}
+      propertyPath: m_TagString
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d9808401c68af274a8edfbed3d1b53c7, type: 3}
       propertyPath: m_RootOrder
@@ -196,6 +200,7 @@ GameObject:
   - component: {fileID: 62674999}
   - component: {fileID: 62674998}
   - component: {fileID: 62674997}
+  - component: {fileID: 62675000}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -270,7 +275,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u6062\u5FA9\u904A\u6232"
+  m_Text: REPLAY
 --- !u!222 &62674999
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -279,6 +284,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 62674995}
   m_CullTransparentMesh: 1
+--- !u!114 &62675000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 62674995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 359fafe911287a543ab6644ee740e98b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ID: 27
 --- !u!1 &552257152
 GameObject:
   m_ObjectHideFlags: 0
@@ -362,7 +380,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 552257155}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1370871139}
+        m_TargetAssemblyTypeName: GM, Assembly-CSharp
+        m_MethodName: Pause
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &552257155
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -413,7 +443,7 @@ Animator:
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 97404eb78725608418acbea8f6699582, type: 2}
   m_CullingMode: 0
-  m_UpdateMode: 0
+  m_UpdateMode: 2
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_WarningMessage: 
@@ -572,6 +602,7 @@ GameObject:
   - component: {fileID: 691470280}
   - component: {fileID: 691470279}
   - component: {fileID: 691470278}
+  - component: {fileID: 691470281}
   m_Layer: 5
   m_Name: Text_PAUSE
   m_TagString: Untagged
@@ -637,7 +668,7 @@ MonoBehaviour:
     m_Font: {fileID: 12800000, guid: 203dcb74aaa5dde408516fd2faf55590, type: 3}
     m_FontSize: 200
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 0
     m_MaxSize: 200
     m_Alignment: 4
@@ -655,6 +686,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 691470276}
   m_CullTransparentMesh: 1
+--- !u!114 &691470281
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 691470276}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 359fafe911287a543ab6644ee740e98b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ID: 26
 --- !u!1 &700837407
 GameObject:
   m_ObjectHideFlags: 0
@@ -742,7 +786,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u5206\u6578\uFF1A"
+  m_Text: 'SCORE: '
 --- !u!222 &700837411
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -817,7 +861,7 @@ MonoBehaviour:
   MaxY: 4.6
   isTouch: 0
   Bullet: {fileID: 7106559060955822971, guid: 426e1c2a69c09d543a5d3973856344fc, type: 3}
-  SetTime: 3
+  SetTime: 0.5
   TargetPoint: {fileID: 1495716572}
 --- !u!114 &862854774
 MonoBehaviour:
@@ -874,7 +918,7 @@ RectTransform:
   m_Children:
   - {fileID: 62674996}
   m_Father: {fileID: 1021285778}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -893,7 +937,7 @@ Animator:
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 97404eb78725608418acbea8f6699582, type: 2}
   m_CullingMode: 0
-  m_UpdateMode: 0
+  m_UpdateMode: 2
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_WarningMessage: 
@@ -943,7 +987,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 865656238}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1370871139}
+        m_TargetAssemblyTypeName: GM, Assembly-CSharp
+        m_MethodName: Pause
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &865656238
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -994,6 +1050,7 @@ GameObject:
   - component: {fileID: 870852880}
   - component: {fileID: 870852879}
   - component: {fileID: 870852878}
+  - component: {fileID: 870852881}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -1068,7 +1125,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u56DE\u9996\u9801"
+  m_Text: HOME
 --- !u!222 &870852880
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1077,6 +1134,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 870852876}
   m_CullTransparentMesh: 1
+--- !u!114 &870852881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 870852876}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 359fafe911287a543ab6644ee740e98b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ID: 28
 --- !u!1 &1021285777
 GameObject:
   m_ObjectHideFlags: 0
@@ -1107,8 +1177,8 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 691470277}
-  - {fileID: 1131272871}
   - {fileID: 865656235}
+  - {fileID: 1131272871}
   m_Father: {fileID: 1369082493}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1188,7 +1258,7 @@ RectTransform:
   m_Children:
   - {fileID: 870852877}
   m_Father: {fileID: 1021285778}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1207,7 +1277,7 @@ Animator:
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 97404eb78725608418acbea8f6699582, type: 2}
   m_CullingMode: 0
-  m_UpdateMode: 0
+  m_UpdateMode: 2
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_WarningMessage: 
@@ -1546,10 +1616,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 741f5cdfe69a2a14aaabf8dff0cf6592, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SetTime: 3
+  SetTime: 1
   Enemys:
   - {fileID: 4953319616716296809, guid: f5081e5d20ed1664bbdcaa16371a0038, type: 3}
-  - {fileID: 3969408479578490703, guid: 8c0274c9a4d71f34eacc12bcbb72fd9f, type: 3}
+  - {fileID: 7769365742621561303, guid: c2251eddcdc8a514c833b823335bd22a, type: 3}
+  MaxX: 2.35
+  MinX: -2.35
+  PauseUI: {fileID: 1021285777}
+  TotalHP: 100
+  ScriptHP: 0
+  PlayerHPImage: {fileID: 1808482687}
+  ScoreText: {fileID: 700837410}
 --- !u!4 &1370871140
 Transform:
   m_ObjectHideFlags: 0
@@ -1557,13 +1634,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1370871138}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: -0.7071068, w: 0}
   m_LocalPosition: {x: 0, y: 11.28, z: -0.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: -180}
 --- !u!1 &1415865935
 GameObject:
   m_ObjectHideFlags: 0
@@ -1636,7 +1713,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u66AB\u505C\u904A\u6232"
+  m_Text: STOP
 --- !u!222 &1415865938
 CanvasRenderer:
   m_ObjectHideFlags: 0
