@@ -29,6 +29,9 @@ public class GM : MonoBehaviour
     public Text ScoreText;
     int TotalScore;
 
+    //暫存遊戲分數
+    string SaveScore = "SaveScore";
+
     // Start is called before the first frame update
     void Start()
     {
@@ -70,6 +73,7 @@ public class GM : MonoBehaviour
         PlayerHPImage.fillAmount = ScriptHP / TotalHP;
         if (PlayerHPImage.fillAmount <= 0)
         {
+            PlayerPrefs.SetInt(SaveScore, TotalScore);
             Application.LoadLevel("GameOver");
         }
     }

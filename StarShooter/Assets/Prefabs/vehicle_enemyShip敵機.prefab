@@ -130,8 +130,10 @@ MonoBehaviour:
   Speed: 3
   DeleteTime: 8
   Bullet: {fileID: 3969408479578490703, guid: 8c0274c9a4d71f34eacc12bcbb72fd9f, type: 3}
-  SetTime: 0.5
+  SetTime: 0.3
   TargetPoint: {fileID: 2198653657946982915}
+  Ex: {fileID: 0}
+  getHurt: 100
 --- !u!1 &7170166236452856674
 GameObject:
   m_ObjectHideFlags: 0

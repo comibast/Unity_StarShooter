@@ -131,3 +131,5 @@ MonoBehaviour:
   Bullet: {fileID: 0}
   SetTime: 0
   TargetPoint: {fileID: 0}
+  Ex: {fileID: 100012, guid: 160925a6fe2664f2a978566b819f0af0, type: 3}
+  getHurt: 100

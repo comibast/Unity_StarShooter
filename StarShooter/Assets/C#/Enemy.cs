@@ -13,6 +13,9 @@ public class Enemy : MonoBehaviour
     float ScriptTime;
     [Header("子彈的參考位置")]
     public Transform TargetPoint;
+    public GameObject Ex;
+    [Header("撞傷")]
+    public float getHurt;
     // Start is called before the first frame update
     void Start()
     {
@@ -33,6 +36,18 @@ public class Enemy : MonoBehaviour
     void CreateBullets()
     {
         Instantiate(Bullet, TargetPoint.transform.position, TargetPoint.transform.rotation);
+    }
+    /// <summary>
+    /// 被隕石撞傷，隕石爆炸消失
+    /// </summary>
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag=="Player")
+        {
+            FindObjectOfType<GM>().HurtPlayer(getHurt);
+            Instantiate(Ex, gameObject.transform.position,gameObject.transform.rotation);
+            Destroy(gameObject);
+        }
     }
 
 

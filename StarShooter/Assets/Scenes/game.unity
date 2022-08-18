@@ -861,7 +861,7 @@ MonoBehaviour:
   MaxY: 4.6
   isTouch: 0
   Bullet: {fileID: 7106559060955822971, guid: 426e1c2a69c09d543a5d3973856344fc, type: 3}
-  SetTime: 0.5
+  SetTime: 0.3
   TargetPoint: {fileID: 1495716572}
 --- !u!114 &862854774
 MonoBehaviour:
@@ -1623,7 +1623,7 @@ MonoBehaviour:
   MaxX: 2.35
   MinX: -2.35
   PauseUI: {fileID: 1021285777}
-  TotalHP: 100
+  TotalHP: 1000
   ScriptHP: 0
   PlayerHPImage: {fileID: 1808482687}
   ScoreText: {fileID: 700837410}
